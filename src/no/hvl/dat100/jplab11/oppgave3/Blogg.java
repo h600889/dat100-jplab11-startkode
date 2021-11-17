@@ -79,6 +79,7 @@ public class Blogg {
 		for (int i = 0; i < nesteledig; i++) {
 			if (innleggtabell[i].erLik(innlegg)) {
 				innleggtabell[i] = innleggtabell[nesteledig-1];
+				innleggtabell[nesteledig-1]=null;
 				nesteledig--;
 				return true;
 			}
