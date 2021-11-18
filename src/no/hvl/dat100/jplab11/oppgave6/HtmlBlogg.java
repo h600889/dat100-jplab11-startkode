@@ -9,13 +9,17 @@ public class HtmlBlogg extends Blogg {
 	public HtmlBlogg() {
 		super();
 	}
-	
-	private static String HTMLPREFIX = 
+
+	private static String HTMLPREFIX =
 			"<html>\n\t<head>\n\t\t<title>DAT100 Blogg</title>\n\t</head>\n\t<body>\n";
-	
-	private static String HTMLPOSTFIX = 
+
+	private static String HTMLPOSTFIX =
 			"\t</body>\n</html>";
-	
+
+	/**
+	 * konverter blogg til HTML-kode
+	 * @return Blogg som HTML-kode
+	 */
 	@Override
 	public String toString() {
 		String contentsStr = "";
